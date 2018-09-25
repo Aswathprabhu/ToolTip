@@ -13,69 +13,60 @@ body,html{
     margin-top:2em;
 }
 .setContent.top:hover::before {
-    position:absolute;
-    top:-1.7em;
-    left:-1.2em;
-    height:auto;
-    width:auto;
-    content:attr(data-tooltip)"";
-    color:white;
-    border-radius:10px;
+    position: absolute;
+    top: -1.85em;
+    left: -1.2em;
+    
+    content: attr(data-tooltip)"";
+    color: white;
+    border-radius: 10px;
     background-color: black;
-    border:solid 1px rgb(255, 0, 157);
-    font-size:35px;
+    border: solid 1px rgb(255, 0, 157);
+    font-size: 30px;
 }
 .setContent.top:hover::after {
     content:'';
     display:block;
-    
     position:absolute;
-    
     border-left: 8px solid transparent;
     border-right: 8px solid transparent; 
     border-top:8px solid black;
     left:0.35em;
-    
     top:-0.35em;
 }
 .setContent.left:hover::before {
     position:absolute;
     top:0em;
-    left:-4.5em;
-    height:auto;
-    width:auto;
+    left:-4.58em;
+    margin-right:-8px;
     content:attr(data-tooltip)"";
     color:white;
     border-radius:10px;
     background-color: black;
     border:solid 1px rgb(255, 0, 157);
-    font-size:35px;
+    font-size:30px;
 }
 .setContent.left:hover::after {
     content:'';
     display:block;
-    
     position:absolute;
-    
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent; 
     border-left:8px solid black;
     left:-0.25em;
-    
     top:0.3em;
 }
 .setContent.right:hover::before {
     position:absolute;
     top:0em;
-    left:1.7em;
-    height:auto;
-    width:auto;
+    left:100%;
+    margin-left:8px;
     content:attr(data-tooltip)"";
     color:white;
     border-radius:10px;
     background-color: black;
     border:solid 1px rgb(255, 0, 157);
-    font-size:35px;
+    font-size:30px;
 }
 .setContent.right:hover::after {
     content:'';
@@ -86,23 +77,21 @@ body,html{
     border-bottom: 8px solid transparent;
     border-top: 8px solid transparent; 
     border-right:8px solid black;
-    left:1.09em;
+    left:100%;
     
     top:0.3em;
 }
 .setContent.bottom:hover::before {
     position:absolute;
-    top:1.89em;
+    top:100%;
     left:-1.2em;
-   
-    height:auto;
-    width:auto;
+    margin-top: 8px;
     content:attr(data-tooltip)"";
     color:white;
     border-radius:10px;
     background-color: black;
     border:solid 1px rgb(255, 0, 157);
-    font-size:35px;
+    font-size:30px;
 }
 .setContent.bottom:hover::after {
     content:'';
@@ -112,6 +101,6 @@ body,html{
     border-right: 8px solid transparent; 
     border-bottom:8px solid black;
     left:0.35em;
-    top:1.2em;
+    top:100%;
 }
 
