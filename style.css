@@ -1,0 +1,117 @@
+body,html{
+    height:100vh;
+}
+.setContent
+{
+    height:auto;
+    width:1em;
+    background-color: black;
+    color:white;
+    text-align:center;
+    border-radius:30px;
+    margin:auto;
+    margin-top:2em;
+}
+.setContent.top:hover::before {
+    position:absolute;
+    top:-1.7em;
+    left:-1.2em;
+    height:auto;
+    width:auto;
+    content:attr(data-tooltip)"";
+    color:white;
+    border-radius:10px;
+    background-color: black;
+    border:solid 1px rgb(255, 0, 157);
+    font-size:35px;
+}
+.setContent.top:hover::after {
+    content:'';
+    display:block;
+    
+    position:absolute;
+    
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent; 
+    border-top:8px solid black;
+    left:0.35em;
+    
+    top:-0.35em;
+}
+.setContent.left:hover::before {
+    position:absolute;
+    top:0em;
+    left:-4.5em;
+    height:auto;
+    width:auto;
+    content:attr(data-tooltip)"";
+    color:white;
+    border-radius:10px;
+    background-color: black;
+    border:solid 1px rgb(255, 0, 157);
+    font-size:35px;
+}
+.setContent.left:hover::after {
+    content:'';
+    display:block;
+    
+    position:absolute;
+    
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent; 
+    border-left:8px solid black;
+    left:-0.25em;
+    
+    top:0.3em;
+}
+.setContent.right:hover::before {
+    position:absolute;
+    top:0em;
+    left:1.7em;
+    height:auto;
+    width:auto;
+    content:attr(data-tooltip)"";
+    color:white;
+    border-radius:10px;
+    background-color: black;
+    border:solid 1px rgb(255, 0, 157);
+    font-size:35px;
+}
+.setContent.right:hover::after {
+    content:'';
+    display:block;
+    
+    position:absolute;
+    
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent; 
+    border-right:8px solid black;
+    left:1.09em;
+    
+    top:0.3em;
+}
+.setContent.bottom:hover::before {
+    position:absolute;
+    top:1.89em;
+    left:-1.2em;
+   
+    height:auto;
+    width:auto;
+    content:attr(data-tooltip)"";
+    color:white;
+    border-radius:10px;
+    background-color: black;
+    border:solid 1px rgb(255, 0, 157);
+    font-size:35px;
+}
+.setContent.bottom:hover::after {
+    content:'';
+    display:block;
+    position:absolute;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent; 
+    border-bottom:8px solid black;
+    left:0.35em;
+    top:1.2em;
+}
+
