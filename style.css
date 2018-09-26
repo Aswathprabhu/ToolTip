@@ -1,7 +1,5 @@
 body,html{
-    height:100vh;
-    box-sizing: border-box;
-    background: linear-gradient(to right, rgb(26, 0, 31), rgb(180, 111, 255));
+   background: linear-gradient(to right, rgb(26, 0, 31), rgb(180, 111, 255));
 }
 .setContent
 {
@@ -19,7 +17,7 @@ body,html{
     position: absolute;
     min-width:10em;
     box-shadow:.125em .125em .125em black;
-    color: white;
+    color: rgb(201, 164, 240);
     background-color: black;
 }
 .setContent:hover::after{
@@ -34,7 +32,6 @@ body,html{
     content: attr(data-tooltip)"";
 }
 .setContent.top:hover::after {
-    
     border-left: .4em solid transparent;
     border-right: .4em solid transparent; 
     border-top:.4em solid black;
